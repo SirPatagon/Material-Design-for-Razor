@@ -6,7 +6,6 @@ using System.Threading.Tasks;
 
 namespace MaterialDesignForRazor.TagHelpers.Cards
 {
-    [RestrictChildren("primary-content")]
     public class Card : TagHelper
     {
         public CardType CardType { get; set; } = CardType.Standard;

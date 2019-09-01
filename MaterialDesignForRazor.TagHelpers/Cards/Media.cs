@@ -16,7 +16,7 @@ namespace MaterialDesignForRazor.TagHelpers.Cards
         {
             aOutput.TagName = "div";
             aOutput.AddCssClass("mdc-card__media");
-
+    
             switch (AspectRatio)
             {
                 case CardMediaAspectRatio.SixteenToNine:

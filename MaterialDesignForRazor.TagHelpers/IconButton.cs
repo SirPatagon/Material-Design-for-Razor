@@ -17,6 +17,11 @@ namespace MaterialDesignForRazor.TagHelpers
         {
             aOutput.TagName = "button";
             aOutput.AddCssClass("mdc-icon-button material-icons");
+            if (aContext.Items.ContainsKey("Parent") && aContext.Items["Parent"] == "Card")
+            {
+                aOutput.AddCssClass("mdc-card__action");
+                aOutput.AddCssClass("mdc-card__action--icon");
+            }
             aOutput.TagMode = TagMode.StartTagAndEndTag;
 
             if (!String.IsNullOrWhiteSpace(OnIcon))

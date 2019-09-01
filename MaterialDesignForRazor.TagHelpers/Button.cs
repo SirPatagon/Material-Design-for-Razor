@@ -39,16 +39,22 @@ namespace MaterialDesignForRazor.TagHelpers
         {
             aOutput.TagName = "button";
             aOutput.AddCssClass("mdc-button");
+            if (aContext.Items.ContainsKey("Parent") && aContext.Items["Parent"] == "Card")
+            {
+                aOutput.AddCssClass("mdc-card__action");
+                aOutput.AddCssClass("mdc-card__action--button");
+            }
+
             switch (ButtonType)
             {
                 case ButtonType.Outlined:
-                    aOutput.AddCssClass(" mdc-button--outlined");
+                    aOutput.AddCssClass("mdc-button--outlined");
                     break;
                 case ButtonType.Raised:
-                    aOutput.AddCssClass(" mdc-button--raised");
+                    aOutput.AddCssClass("mdc-button--raised");
                     break;
                 case ButtonType.Unelevated:
-                    aOutput.AddCssClass(" mdc-button--unelevated");
+                    aOutput.AddCssClass("mdc-button--unelevated");
                     break;
                 case ButtonType.Text:
                 default:

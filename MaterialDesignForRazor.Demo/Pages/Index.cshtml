@@ -15,10 +15,62 @@
 <icon-button icon="favorite" />
 <icon-button icon="favorite_border" on-icon="favorite" />
 <icon-button icon="favorite_border" on-icon="favorite" is-toggled="true" />
-<card>
+<card style="max-width: 500px;">
     <primary-content>
         <media aspect-ratio="SixteenToNine" image="https://material-components.github.io/material-components-web-catalog/static/media/photos/3x2/2.jpg"></media>
+        <div class="demo-card__primary">
+            <h2 class="demo-card__title mdc-typography mdc-typography--headline6">Our Changing Planet</h2>
+            <h3 class="demo-card__subtitle mdc-typography mdc-typography--subtitle2">by Kurt Wagner</h3>
+        </div>
+        <div class="demo-card__secondary mdc-typography mdc-typography--body2">Visit ten places on our planet that are undergoing the biggest changes today.</div>
     </primary-content>
+    <actions>
+        <buttons>
+            <button>Read</button>
+            <button>Bookmark</button>
+        </buttons>
+        <icons>
+            <icon-button icon="favorite_border" on-icon="favorite" />
+            <icon-button icon="share" />
+            <icon-button icon="more_vert" />
+        </icons>
+    </actions>
+</card>
+<card style="max-width: 500px;">
+    <primary-content>
+        <media aspect-ratio="SixteenToNine" image="https://material-components.github.io/material-components-web-catalog/static/media/photos/3x2/2.jpg">
+            <media-content>
+                <div class="demo-card__primary">
+                    <h2 class="demo-card__title mdc-typography mdc-typography--headline6">Our Changing Planet</h2>
+                    <h3 class="demo-card__subtitle mdc-typography mdc-typography--subtitle2">by Kurt Wagner</h3>
+                </div>
+            </media-content>
+        </media>
+        <div class="demo-card__secondary mdc-typography mdc-typography--body2">Visit ten places on our planet that are undergoing the biggest changes today.</div>
+    </primary-content>
+    <actions>
+        <buttons>
+            <button>Read</button>
+            <button>Bookmark</button>
+        </buttons>
+    </actions>
+</card>
+<card style="max-width: 500px;">
+    <div class="demo-card__primary">
+        <h2 class="demo-card__title mdc-typography mdc-typography--headline6">Our Changing Planet</h2>
+        <h3 class="demo-card__subtitle mdc-typography mdc-typography--subtitle2">by Kurt Wagner</h3>
+    </div>
+    <primary-content>
+        <media aspect-ratio="SixteenToNine" image="https://material-components.github.io/material-components-web-catalog/static/media/photos/3x2/2.jpg"></media>
+        <div class="demo-card__secondary mdc-typography mdc-typography--body2">Visit ten places on our planet that are undergoing the biggest changes today.</div>
+    </primary-content>
+    <actions>
+        <icons>
+            <icon-button icon="favorite_border" on-icon="favorite" />
+            <icon-button icon="share" />
+            <icon-button icon="more_vert" />
+        </icons>
+    </actions>
 </card>
 <div class="text-center">
     <h1 class="display-4">Welcome</h1>
